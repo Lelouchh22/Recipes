@@ -1,16 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
-import { RecipeSearchComponent } from './components/recipe-search/recipe-search.component';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { RecipeListComponent } from "./components/recipe-list/recipe-list.component";
+import { RecipeSearchComponent } from "./components/recipe-search/recipe-search.component";
 
-
-
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -23,10 +20,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule //
   ],
   providers: [
-    provideAnimationsAsync()
+
   ],
   bootstrap: [AppComponent]
 })
